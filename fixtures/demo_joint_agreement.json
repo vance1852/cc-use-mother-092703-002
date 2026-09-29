@@ -1,0 +1,35 @@
+{
+  "project_id": "HY-LRD-2026-01",
+  "title": "高性能柔性传感材料联合研发项目",
+  "version_label": "v1.0",
+  "note": "首版签署文本：高校、企业与产业园联合投入",
+  "parties": [
+    {"party_id": "hy-university", "name": "衡阳理工大学", "kind": "university", "contact": "科研处 周老师"},
+    {"party_id": "smart-polymer", "name": "衡阳智聚材料有限公司", "kind": "enterprise", "contact": "项目部 李经理"},
+    {"party_id": "innovation-park", "name": "衡阳高新产业园管委会", "kind": "park", "contact": "产业科 王科长"}
+  ],
+  "commitments": [
+    {"commitment_id": "c-lab", "party_id": "hy-university", "category": "人力", "description": "研发团队投入", "unit": "人月", "quantity": 36},
+    {"commitment_id": "c-equip", "party_id": "smart-polymer", "category": "设备", "description": "中试线机时开放", "unit": "机时", "quantity": 2000},
+    {"commitment_id": "c-site", "party_id": "innovation-park", "category": "场地", "description": "中试场地与配套", "unit": "平方米", "quantity": 500}
+  ],
+  "funding_sources": [
+    {"source_id": "sf-enterprise", "party_id": "smart-polymer", "name": "企业自筹研发经费", "amount": 600000},
+    {"source_id": "sf-park", "party_id": "innovation-park", "name": "产业园专项扶持资金", "amount": 400000}
+  ],
+  "acceptance_rules": [
+    {"rule_id": "r-prototype", "title": "样机性能验证", "criterion": "样机连续运行72小时关键指标达标率不低于95%", "evidence_required": "第三方检测报告与原始测试记录", "accept_ratio_pct": 90},
+    {"rule_id": "r-pilot", "title": "中试工艺验证", "criterion": "连续三个中试批次良率不低于85%", "evidence_required": "中试批次生产与质检记录", "accept_ratio_pct": 85},
+    {"rule_id": "r-final", "title": "结题资料完整性", "criterion": "技术资料、专利清单与应用报告齐全", "evidence_required": "结题归档清单及查新报告", "accept_ratio_pct": 100}
+  ],
+  "milestones": [
+    {"milestone_id": "M1", "title": "方案设计与原理样机", "plan_date": "2026-03-31", "payment_ratio_pct": 40, "rule_ids": ["r-prototype"]},
+    {"milestone_id": "M2", "title": "中试验证", "plan_date": "2026-06-30", "payment_ratio_pct": 40, "rule_ids": ["r-prototype", "r-pilot"]},
+    {"milestone_id": "M3", "title": "结题验收与转化", "plan_date": "2026-09-30", "payment_ratio_pct": 20, "rule_ids": ["r-final"]}
+  ],
+  "deliverables": [
+    {"deliverable_id": "d1", "milestone_id": "M1", "owner_party_id": "hy-university", "title": "原理样机与检测报告", "description": "含第三方检测报告"},
+    {"deliverable_id": "d2", "milestone_id": "M2", "owner_party_id": "smart-polymer", "title": "中试工艺包", "description": "工艺参数与三批次质检记录"},
+    {"deliverable_id": "d3", "milestone_id": "M3", "owner_party_id": "hy-university", "title": "结题资料汇编", "description": "技术资料与专利清单"}
+  ]
+}
